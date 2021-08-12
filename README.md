@@ -5,10 +5,10 @@ The repo contains the app.py script which is a dummy server that gets an image f
 
 The request.py is a pythonic POST request for that server.
 
-##Required installations##
+## Required installations
 `pip install Flask==2.0.1`
 
-##Running the server##
+## Running the server
 Open a command prompt.
 2. Navigate to this repo directory 
 3. Type `flask run`
