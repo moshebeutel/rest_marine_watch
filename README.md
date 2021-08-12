@@ -9,7 +9,9 @@ The request.py is a pythonic POST request for that server.
 `pip install Flask==2.0.1`
 
 ## Running the server
-Open a command prompt.
-2. Navigate to this repo directory 
-3. Type `flask run`
-4. Run request.py - You should get a response with json annotations
+<ol>
+1. Open a command prompt.
+1. Navigate to this repo directory 
+1. Type `flask run`
+1. Run request.py - You should get a response with json annotations
+</ol>
