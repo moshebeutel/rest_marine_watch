@@ -7,6 +7,8 @@ This is a temporary script file.
 
 
 from flask import Flask, jsonify, request
+import io
+from PIL import Image
 #import matplotlib.pyplot as plt
 app = Flask(__name__)
 
@@ -18,9 +20,8 @@ def predict():
         print("POST called")
         file = request.files['file']
         img_bytes = file.read()
-        print('img size', len(img_bytes))
-        #plt.imshow(img_bytes)
-        #plt.show()
+        image = Image.open(io.BytesIO(img_bytes))
+        print('image size', image.size)
     else:
         print('error')
     
