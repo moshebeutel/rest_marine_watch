@@ -21,7 +21,7 @@ def draw_bounding_box(img, obj):
     bb_x = int(float(img_w) * float(obj['x']))
     bb_y = int(float(img_h) * float(obj['y']))
 
-    cv.rectangle(img,(bb_x - half_bb_w, bb_y- half_bb_h) ,(bb_x+  half_bb_w, bb_y+ half_bb_w),(0,255,0),3)
+    cv.rectangle(img,(bb_x - half_bb_w, bb_y- half_bb_h) ,(bb_x+  half_bb_w, bb_y+ half_bb_h),(0,255,0),3)
 
     
     return img    
